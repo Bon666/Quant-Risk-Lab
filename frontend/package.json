@@ -1,0 +1,16 @@
+{
+  "name": "quant-risk-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "recharts": "^2"
+  },
+  "devDependencies": {
+    "vite": "^5"
+  }
+}
