@@ -1,2 +1,39 @@
 # Quant-Risk-Lab
- Analyzed 5 yrs of multi-asset equity time series 25+ assets to evaluate volatility clustering, maximum drawdown, and risk-adjusted returns. • Implemented rolling Sharpe ratio and downside deviation metrics to compare dynamic allocation strategies. • Visualized portfolio trends and performance comparisons to support investment strategy evaluation.
+ # Quant Risk Lab
+
+A full-stack quantitative finance project.
+
+Features
+- Portfolio Risk Analysis
+- Value at Risk (VaR)
+- Conditional VaR
+- Portfolio Optimization
+- Backtesting engine
+- React dashboard
+
+Tech Stack
+
+Backend
+- Python
+- FastAPI
+- Numpy
+- Pandas
+
+Frontend
+- React
+- Vite
+- Recharts
+
+Infrastructure
+- Docker
+- GitHub Actions
+
+Run locally
+
+docker compose up --build
+
+Frontend
+http://localhost:5173
+
+Backend
+http://localhost:8000/docs
