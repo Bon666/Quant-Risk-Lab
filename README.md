@@ -1,39 +1,33 @@
-# Quant-Risk-Lab
- # Quant Risk Lab
+# Quant Risk Lab Pro (Full-Stack)
 
-A full-stack quantitative finance project.
+A production-style quantitative risk & portfolio analytics platform.
 
-Features
-- Portfolio Risk Analysis
-- Value at Risk (VaR)
-- Conditional VaR
-- Portfolio Optimization
-- Backtesting engine
-- React dashboard
+## Features
+- Market data fetch + PostgreSQL cache
+- Risk engine:
+  - Historical VaR/CVaR
+  - Parametric (Normal) VaR/CVaR
+  - Correlated Monte Carlo VaR/CVaR (Cholesky)
+  - EVT (Peaks-over-Threshold) VaR/CVaR
+  - EWMA covariance option
+- Portfolio optimization:
+  - Min Variance (long-only)
+  - Max Sharpe (long-only)
+  - Risk Parity
+  - Efficient Frontier
+- Backtesting:
+  - Monthly / Quarterly rebalancing
+  - Transaction costs (bps) + turnover
+  - Metrics: CAGR, Vol, Sharpe, Sortino, Max Drawdown, Calmar
+- Reports:
+  - Export Markdown + JSON as ZIP
 
-Tech Stack
+## Tech Stack
+Backend: FastAPI + SQLModel + PostgreSQL  
+Frontend: React + Vite + TypeScript + Recharts  
+Infra: Docker Compose  
+Quality: Ruff + Pytest + GitHub Actions CI
 
-Backend
-- Python
-- FastAPI
-- Numpy
-- Pandas
-
-Frontend
-- React
-- Vite
-- Recharts
-
-Infrastructure
-- Docker
-- GitHub Actions
-
-Run locally
-
+## Quick Start
+```bash
 docker compose up --build
-
-Frontend
-http://localhost:5173
-
-Backend
-http://localhost:8000/docs
